@@ -20,6 +20,8 @@
  * http://sailsjs.org/#/documentation/concepts/Routes/RouteTargetSyntax.html
  */
 
+
+
 module.exports.routes = {
 
   /***************************************************************************
@@ -32,9 +34,7 @@ module.exports.routes = {
   *                                                                          *
   ***************************************************************************/
 
-  '/': {
-    view: 'homepage'
-  },
+  '/': 'HomeController.index',
   'post /marca': 'MarcaController.index'
 
 

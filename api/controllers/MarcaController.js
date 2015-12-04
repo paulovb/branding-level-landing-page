@@ -7,6 +7,7 @@
 
 module.exports = {
 
+
   index: function (req, res, next) {
     Contact.create(req.params.all(), function userCreated (err, contact) {
       if (err) {
@@ -28,4 +29,3 @@ module.exports = {
   },
 
 }
-
